@@ -1,11 +1,16 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View} from 'react-native'
 import Header from './src/components/header'
+import AlbumList from './src/components/albumList'
+
+
 export default class App extends React.Component {
 	render() {
+
 		return (
-			<View style={styles.container}>
-				<Header/>
+		    <View>
+				<Header headerText={'Albums!!'}/>
+				<AlbumList/>
 			</View>
 		)
 	}
@@ -17,5 +22,6 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center',
-	},
+	}
+
 })
